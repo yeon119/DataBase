@@ -45,4 +45,8 @@ where a.division_code ='1112';
 
 select * from division a
 left outer join employee b
-	on a.division_code =b.division_code
+	on a.division_code =b.division_code;
+    
+select * from employee a
+right outer join division b
+	on a.division_code = b.division_code;
