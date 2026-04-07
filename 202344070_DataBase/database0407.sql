@@ -70,4 +70,11 @@ select * from dbstudent2;
 -- json은 데이터를 각 카-값 쌍으로 저장하는 데이터 분류방식 json 
 
     
-    
+select json_object(
+'department', department,
+'student_number', student_number,
+'name', name,
+'grade', grade,
+'cell_phone',cell_phone,
+'email', email)
+from dbstudent;
