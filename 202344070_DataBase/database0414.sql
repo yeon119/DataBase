@@ -62,3 +62,16 @@ insert into primary_students values('890413-1712343','김재현');
 select * from primary_students;
 
 insert into primary_students values('890413-1712343','김다영'); -- 얘도 중복값이기때문에 에러가남
+
+insert into primary_students values(null,'김성일'); -- 얘는 널갑시이기 때문에 에러임
+
+create table auto_employees (
+	-- id 칼럼이 자동으로 1,2,3...늘어나며 기본 키 역할을 함
+    emp_id int auto_increment primary key,
+    enp_name varchar(50) not null,
+    hire_date date
+);
+
+insert into auto_employees (enp_name, hire_date) values ('박진희','2024-01-01');  -- emp를 enp로 오타
+insert into auto_employees (enp_name, hire_date) values ('김경아','2025-02-03');
+select * from auto_employees;
