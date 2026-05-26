@@ -53,6 +53,7 @@ select * from user;
 
 select * from dbstudent
 into outfile 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/dbstudent.csv'
+
 fields terminated by','
 enclosed by'"'
 lines terminated by '\n';
